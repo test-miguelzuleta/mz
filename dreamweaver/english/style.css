@@ -1,0 +1,27 @@
+body {
+	background-color:#000000;
+	font-family: "Arial", Times, serif;
+	color:#FFFFFF;
+	font-size:10pt;
+	
+}
+
+td {
+	font-family: "Arial", Times, serif;
+	text-align: left;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+th {
+	font-family: "Arial", Times, serif;
+	}
+
+p {
+	font-family: "Arial", Times, serif;
+	text-align: left;
+	color:#FFFFFF;
+	font-size:10pt;
+	margin-top: 0px;
+	padding-top: 0px;
+}
