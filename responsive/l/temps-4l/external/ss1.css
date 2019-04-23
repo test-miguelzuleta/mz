@@ -1,0 +1,18 @@
+#whole{width:1040px;height:1000px;margin:0 auto;position:relative;}
+#content{width:960px;height:390px;margin:180px auto 0 auto;padding:80px 40px 40px;position:absolute;}
+#content > *{position:relative;float:left;}
+#sec-1{width:702px;height:310px;margin:0 0 0 123px;}
+#sec-1 > *{float:right !important;}
+#whole ul{width:130px;height:auto;margin:0 10px 0 0;}
+#whole li{width:130px;height:70px;margin:0 0 10px 0;list-style-type:none;float:left;}
+#sec-2{width:inherit;height:auto;margin:153px 0 0 -2px;padding:0 0 0 22px;}
+.silo{width:200px;height:auto;margin:0 40px 0 0;float:left;}
+.silo *{float:left;}
+.silo div{width:50px;height:50px;margin:0 0 15px 75px;}
+h2, p{width:inherit;}
+h1{top:23px;left:135px;position:absolute !important;text-align:center;margin:0 auto;width:770px;}
+h2{margin:-2px 0 6px 0;text-align:center;}
+#whole h3{text-transform:uppercase;position:absolute;padding:12px 0 0 15px;top:0;left:123px;}
+#btnWrapper, #yiyo{position:absolute;top:390px;left:340px;}
+#callback{position:absolute;top:0;left:21px;}
+video, #big-img, #extra-logo{display:none !important;}

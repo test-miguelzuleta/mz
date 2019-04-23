@@ -1,0 +1,22 @@
+#whole{width:440px;height:810px;margin:-50px auto 0 auto;}
+#content{width:380px;height:640px;padding:30px;position:absolute;}
+#content > *{position:relative;float:left;}
+#sec-1{display:none;}
+#sec-2{width:380px;height:277px;margin:0 0 0 -2px;}
+.silo{width:380px;height:50px;margin:0 0 20px 0;}
+.silo *{float:left;}
+.silo div{width:50px;height:50px;margin:0 15px 0 0;}
+h2, p{width:315px;}
+h1{margin:0 0 25px 0;}
+h2{margin:-2px 0 2px 0;}
+#whole h3{text-transform:uppercase;position:relative !important;padding:15px;top:58px;left:117px;z-index:1;}
+p{font-size:11px;line-height:19px;}
+#btnWrapper, #yiyo{margin:0 0 0 10px;}
+#big-img{z-index:-1;}
+video, #big-img{display:block;position:fixed;width:1680px;height:950px;left:50%;top:0;margin:0 0 0 -840px;}
+video{-webkit-animation:fadeIn 5s ease;-o-animation:fadeIn 5s ease;-moz-animation:fadeIn 5s ease;}
+#extra-logo{display:block;margin:25px 0 0 -30px;}
+#callback{top:110px;left:17px;position:relative;z-index:1;}
+/*@-webkit-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@-o-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@-moz-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}*/

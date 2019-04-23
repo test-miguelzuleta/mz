@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<script src="arrange.js" type="text/javascript"></script>
+<script type="text/javascript">
+if(layoutNumber > 4 || isNaN(layoutNumber) || layoutNumber === ""){
+	alert('Layout names go 1, 2, 3, 4.\n\nYou typed "' + layoutNumber + '"\n\nFIX IT!');
+}
+
+function custom_css(){
+	var getTag2 = document.getElementsByTagName('head')[0];
+	var newTag2 = document.createElement('link');
+	newTag2.href = '../layouts/'+layoutNumber+'/custom-'+layoutNumber+'.css';
+	newTag2.type = 'text/css';
+	newTag2.rel = 'stylesheet';
+	getTag2.appendChild(newTag2);
+}
+custom_css();
+
+function layout_css(){
+	var getTag = document.getElementsByTagName('head')[0];
+	var newTag = document.createElement('link');
+	newTag.href = '../external/ss'+layoutNumber+'.css';
+	newTag.type = 'text/css';
+	newTag.rel = 'stylesheet';
+	getTag.appendChild(newTag);
+}
+layout_css();
+</script>
+<link type="text/css" href="http://miguelzuleta.com/fontfaces/all-fonts.css" rel="stylesheet"/>
+<style type="text/css">
+body ::selection{background-color:#fff;color:#000;}
+#whole li, .silo div, #btnWrapper, #yiyo a, #callback, .frame-overlay, #extra-logo{background-image:url(sprite.png);background-repeat:no-repeat;}
+#btnWrapper, #yiyo a{display:block;width:360px;height:130px;text-indent:-99999px;cursor:pointer;background-position:-10px -80px;}
+#btnWrapper *{width:360px;height:130px;}
+#btnWrapper:hover, #yiyo a:hover{background-position:-10px -210px;}
+#callback{width:110px;height:50px;display:block;background-position:-420px -80px;}
+#whole li:hover{cursor:pointer;}
+#ss iframe, #ss img{width:551px;height:310px;background-color:#000;}
+#thumb-1{background-position:-10px -10px;}
+#thumb-2{background-position:-140px -10px;}
+#thumb-3{background-position:-270px -10px;}
+#thumb-4{background-position:-400px -10px;}
+#icon-1{background-position:-370px -80px;}
+#icon-2{background-position:-370px -130px;}
+#icon-3{background-position:-370px -180px;}
+#icon-4{background-position:-370px -230px;}
+#ss{width:551px;height:310px;position:relative;}
+.frame-overlay{position:absolute;}
+#frame-1{width:551px;height:5px;top:0;left:0;background-position:0 0;}
+#frame-2{width:551px;height:5px;bottom:0;left:0;background-position:0 -5px;}
+#frame-3{width:5px;height:300px;top:5px;left:0;background-position:0 -10px;}
+#frame-4{width:5px;height:300px;top:5px;right:0;background-position:-5px -10px;}
+#extra-logo{width:440px;height:160px;background-position:0 -340px;}
+</style>
+</head>
+<body>
+<div id="page-vid"></div>
+<div id="big-img"></div>
+<div id="whole">
+	<a id="callback" href="http://www.aeriagames.com"></a>
+    <h3>Over 40 Million Players</h3>
+	<div id="content">
+    	<div id="extra-logo"></div>
+        <h1>Landing Page Headline</h1>
+        <div id="sec-1">
+            <div id="ss"></div>
+            <ul>
+                <li id="thumb-1" onclick="hideEm('showit0');"></li>
+                <li id="thumb-2" onclick="hideEm('showit1');"></li>
+                <li id="thumb-3" onclick="hideEm('showit2');"></li>
+                <li id="thumb-4" onclick="hideEm('showit3');"></li>
+            </ul>
+        </div>
+        <div id="sec-2">
+            <div class="silo">
+                <div id="icon-1"></div>
+                <h2>Title Number One</h2>
+                <p>You take the role of a daring space pirate mined to loot the Mantis transports at all costs. Nee hello.</p>
+            </div>
+            <div class="silo">
+                <div id="icon-2"></div>
+                <h2>Title Number Two</h2>
+                <p>You take the role of a daring space pirate mined to loot the Mantis transports at all costs. Nee hello.</p>
+            </div>
+            <div class="silo">
+                <div id="icon-3"></div>
+                <h2>Title Number Three</h2>
+                <p>You take the role of a daring space pirate mined to loot the Mantis transports at all costs. Nee hello.</p>
+            </div>
+            <div class="silo">
+                <div id="icon-4"></div>
+                <h2>Title Number Four</h2>
+                <p>You take the role of a daring space pirate mined to loot the Mantis transports at all costs. Nee hello.</p>
+            </div>
+        </div>
+    	<div id="btnWrapper">%NEW_REG_FLOW%</div>
+    </div>
+</div>
+<script type="text/javascript">
+function loadVid(){
+	if(layoutNumber === 4 || layoutNumber === "4"){
+		var getVid = document.getElementById('page-vid');
+		var injectSrc = '<video loop="" autoplay="" preload="auto" autobuffer=""><source src="'+vidLink+'.mp4" type="video/mp4"><source src="'+vidLink+'.ogv" type="video/ogg;codecs=theora,vorbis"></video>';
+		getVid.innerHTML = injectSrc;
+	}
+	console.log('all is loaded!');
+}
+loadVid();
+
+var mainId = document.getElementById("ss");
+var ytLink = "http://www.youtube.com/embed/|?wmode=transparent&rel=0&theme=" + vidTheme + "&autohide=1&autoplay=0&showinfo=0";
+var breakIt = ytLink.split("|");
+
+function doNhide(){
+	for(i = 0; i < elemSrc.length; i++){
+		if(elemSrc[i].length < 15){
+			var hey = '<iframe name="showit" id="showit'+ i +'" src="' + breakIt[0] + elemSrc[i] + breakIt[1] + '" frameborder="0" allowfullscreen></iframe>';
+			document.getElementById("ss").innerHTML += hey;
+		}
+		else{
+			var hey = '<img name="showit" id="showit'+ i +'" src="' + elemSrc[i] + '" />';
+			document.getElementById("ss").innerHTML += hey;
+		}
+	}
+	
+	for(i = 1; i < elemSrc.length; i++){
+		mainId.childNodes[i].style.display = "none";
+	}
+	
+	for(k = 1; k <= 4; k++){
+		var getIframe = '<div id="frame-' + k + '" class="frame-overlay"></div>';
+		document.getElementById("ss").innerHTML += getIframe;
+	}
+}
+doNhide();
+
+function hideEm(chosen){
+	for(i = 0; i < elemSrc.length; i++){
+		var allNames = mainId.childNodes[i];
+		if(allNames.name === "showit"){
+			if(allNames.id === chosen){
+				if(mainId.childNodes[i].tagName === "IFRAME"){
+					allNames.setAttribute("src", breakIt[0] + elemSrc[i] + breakIt[1]);
+				}
+				allNames.style.display = "block";
+			}
+			else{
+				if(mainId.childNodes[i].tagName === "IFRAME"){
+					allNames.setAttribute("src", "");
+				}
+				allNames.style.display = "none";
+			}
+		}
+	}
+}
+
+var parTag = document.getElementById("btnWrapper");
+var childTag = document.getElementById("primaryMenuSignup");
+function changeIt(button){
+	if(button !== ""){
+		parTag.removeChild(childTag);
+		parTag.id = "yiyo";
+		parTag.innerHTML = "<a href='" + button + "'></a>";
+	}
+}
+changeIt("");
+</script>
+</body>
+</html>
