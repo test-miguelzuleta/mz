@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js3.js" type="text/javascript"></script>
+<title>Contact</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" style="text/css" href="styles.css" />
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+</head>
+<body>
+<div id="old-ie">
+	<div></div>
+	<h4>It seems that your browser is a bit too old.</h4>
+	<h4>If you want this website to show and to look pretty, I recommend you use other browsers like Chrome, Firefox, Safari, or Opera.</h4>
+</div>
+<header>
+	<nav>
+		<a id="logo" href="index.html">
+			<div>Miguel Zuleta</div>
+		</a>
+		<div id="mobile-nav"></div>
+		<ul id="menu">
+			<li><a class="header-btn txt-hc3" href="web.html">Web</a></li>
+			<li><a class="header-btn txt-hc4" href="ads.html">Advertising</a></li>
+			<li><a class="header-btn txt-hc5" href="video.html">Video</a></li>
+			<li><a class="header-btn txt-hc6" href="templates.html">Templates</a></li>
+			<li><a class="header-btn txt-hc8" href="about.html">About</a></li>
+			<li><a class="header-btn txt-hc7 active" href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="page">
+	<h1 class="txt-c7">Contact Me</h1>
+	<h2 class="txt-c2">Sorry folks but I cannot take full time projects at the moment, but feel free to drop a line and we'll stay in touch!</h2>
+	<form method="post" name="contactform" action="http://musicavivacolombia.com/i/form.php" onsubmit="return checkForm();">
+		<div id="form-side-1">
+			<div>
+				<label class="txt-c1" for="name">Full Name</label>
+				<input id="name-input" class="txt-c7" type="text" name="name" placeholder="Your Full Name"></input>
+			</div>
+			<div>
+				<label class="txt-c1" for="email">Your Email</label>
+				<input id="email-input" class="txt-c7" type="text" name="email" placeholder="Your Email"></input>
+			</div>
+		</div>
+		<div id="form-side-2">
+			<label class="txt-c1" for="details">Tell Me All About It</label>
+			<textarea id="details-input" class="txt-c7" name="details" placeholder="Your Awesome Plan"></textarea>
+		</div>
+		<input class="other-btn" type="submit" value="Submit!"></input>
+	</form>
+</div>
+<script src="js2.js" type="text/javascript"></script>
+</body>
+</html>
